@@ -13,4 +13,4 @@ Resources:
                         Ref: SNSEmail
                     Protocol: email
 Outputs:
-    TestOutput: 'test'
+    TestOutput: 'SNSEmail'
