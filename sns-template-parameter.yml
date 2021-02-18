@@ -13,4 +13,8 @@ Resources:
                         Ref: SNSEmail
                     Protocol: email
 Outputs:
-    TestOutput: 'SNSEmail'
+  Logical ID:
+    Description: Information about the value
+    Value: Value to return
+    Export:
+      Name: Value to export
