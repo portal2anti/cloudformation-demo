@@ -13,7 +13,7 @@ Resources:
                         Ref: SNSEmail
                     Protocol: email
 Outputs:
-  Logical ID:
+  LogicalID:
     Description: Information about the value
     Value: Value to return
     Export:
