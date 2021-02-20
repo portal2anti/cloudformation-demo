@@ -3,7 +3,16 @@
     "Resources": {
         "S3Bucket": {
             "Type": "AWS::S3::Bucket"
+        },
+        "AlertSNSTopic" : {
+            "Type" : "AWS::SNS::Topic",
+            "Properties" : {
+            "Subscription" :  [{
+                "Endpoint" : { "Ref" : "SNSEmail"},
+                "Protocol" : "email"
+            }]
         }
+      }
     },
     "Outputs": {
     "BucketName": {
